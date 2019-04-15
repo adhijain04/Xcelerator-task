@@ -1,0 +1,102 @@
+.card-list-header
+	margin: 0 0 20px 0
+	color: #515356
+	width: 100%
+	font-size: 35px
+	text-align: center
+.cards-container
+	.card
+		display: flex
+		cursor: pointer
+		border-radius: 7px
+		margin-bottom: 10px
+		background: #f8f8f8
+		align-items: flex-start
+		transition: all ease 0.4s
+		img
+			width: 44%
+			border-top-left-radius: 7px
+			border-bottom-left-radius: 7px
+		.card-content-container
+			height: 100%
+			padding: 15px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			.card-contents
+				.card-title
+					color: #515356
+					margin: 0px
+				.card-tags
+					display: flex
+					align-items: center
+					margin: 6px 0
+					justify-content: flex-start
+					p
+						margin: 0px
+						color: #515356
+						border: solid 1px #a9a9a9
+						padding: 3px 15px
+						border-radius: 50px
+						margin-right: 10px
+				.card-desc
+					margin: 0px
+					color: #515356
+					font-weight: 500
+					font-size: 16px !important
+					overflow: hidden
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+			.card-actions-container
+				display: flex
+				margin-top: 15px
+				padding-top: 15px
+				align-items: center
+				justify-content: space-between
+				border-top: solid 1px #eee
+				.card-action
+					color: #515356
+					margin-right: 10px
+				.read-more
+					color: #515356
+					border: none
+					cursor: pointer
+					padding: 8px 15px
+					border-radius: 50px
+					background: transparent
+					border: solid 1px #a9a9a9
+					transition: all ease 0.4s
+					&:hover
+						color: #fff
+						background: #ef5a20
+						border: solid 1px #ef5a20
+					&:focus
+						outline-width: 0px
+	.error-container
+		height: 80vh
+		display: flex
+		align-items: center
+		justify-content: center
+		p
+			color: #c1c1c1
+			font-size: 25px
+			font-weight: bold
+			text-align: center
+@media only screen and (max-width: 480px)
+	.card-app-container
+		padding: 10px
+	.card-list-header
+		margin: 10px 0 20px 0
+	.cards-container
+		.card
+			flex-direction: column
+			&:focus
+				outline: 0
+			img
+				width: 100%
+				border-top-left-radius: 7px
+				border-top-right-radius: 7px
+				border-bottom-left-radius: 0px
+			.card-content-container
+				padding: 10px
